@@ -14,6 +14,7 @@
 
 <!-- Optional theme -->
 <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="{{ URL::to('/'); }}/style/style.css">
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
@@ -21,13 +22,16 @@
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!-- WARNING: Respond.js doesnt work if you view the page via file:// -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
   <body>
+      <div class="container-fluid">
+  <div class="row">
+<div class="col-xs-12col-md-12">
   	  <nav class="navbar navbar-default" role="navigation">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -50,7 +54,7 @@
 <button type="button" class="btn btn-default">
   <span class="glyphicon glyphicon-align-justify"></span>
 </button>
-          </b></a>
+          </a>
           <ul class="dropdown-menu">
           	<li><a href="#">ترتيب المشتركين</a></li>
           	<li><a href="#">طريقة الإشتراك</a></li>
@@ -62,16 +66,16 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav><!-- /.end navbar -->
-    <div class="container-fluid">
-  <div class="row">
+  
    @yield('content')
 
-
+  </div>
    <div class="panel panel-default">
   <div class="panel-body">
     Sawas Group
   </div>
 </div>
+  </div>
   </div>
 </div>
 </body>

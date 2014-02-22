@@ -1,12 +1,10 @@
 @extends('layouts.master')
-
-  
-
 @section('content')
 <div class="row">
 <div class="col-md-4">
 
 	<a href="http://www.facebook.com/sharer/sharer.php?u={{ URL::to('/'); }}">Share on Facebook</a>
+  <br>
 	<a href="http://www.facebook.com/sharer/sharer.php?u={{ URL::to('/'); }}">Share on Facebook</a>
 
 </div>
