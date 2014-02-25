@@ -43,6 +43,8 @@
         <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand" href="#">Brand</a>
+      <button type="button" class="btn " data-toggle="modal" data-target="#signup">أنشئ حساب</button>
+
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -76,6 +78,70 @@
   </div>
 </div>
   </div>
+  </div>
+</div>
+
+<div class="modal fade bs-example-modal-lg" id="signup" tabindex="-1" role="dialog" aria-labelledby="signup" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+     <div class="row">
+  <div class="col-md-9 col-md-offset-1">
+<h2>نموذج التسجيل</h2>
+
+{{ Form::open(array('url' => 'Controller@method')) }}
+<div class="form-group reg">
+    <div class="col-sm-10">
+<input class="form-control input-lg" type="text" placeholder="">
+    </div>
+        <label for="inputEmail3" class="col-sm-2 control-label">الأسم</label>
+        <div style="clear:both"></div>
+  </div>
+
+  <div class="form-group reg">
+    <div class="col-sm-10">
+    <input class="form-control input-lg" type="text" placeholder="">
+    </div>
+        <label for="inputEmail3" class="col-sm-2 control-label">البريد الإلكتروني</label>
+        <div style="clear:both"></div>
+  </div>
+
+  <div class="form-group reg">
+    <div class="col-sm-10">
+     <input class="form-control input-lg" type="text" placeholder="">
+    </div>
+        <label for="inputEmail3" class="col-sm-2 control-label">تاريخ الميلاد</label>
+        <div style="clear:both"></div>
+  </div>
+
+  <div class="form-group reg">
+    <div class="col-sm-10">
+      <input class="form-control input-lg" type="text" placeholder="">
+    </div>
+        <label for="inputEmail3" class="col-sm-2 control-label">الجنس</label>
+        <div style="clear:both"></div>
+  </div>
+
+  <div class="form-group reg">
+    <div class="col-sm-10">
+      <input class="form-control input-lg" type="text" placeholder="">
+    </div>
+        <label for="inputEmail3" class="col-sm-2 control-label">تاريخ الميلاد</label>
+        <div style="clear:both"></div>
+  </div>
+
+  <div class="form-group reg">
+    <label for="inputEmail3" class="col-sm-2 control-label"></label>
+    <div class="col-sm-10">
+       {{Form::submit('  أرسل  ',array('class' => 'btn btn-primary btn-lg'))}}
+    </div>
+    <div style="clear:both"></div>
+  </div>
+ 
+<div style="clear:both"></div>
+{{ Form::close() }}
+     </div>
+     </div>
+</div>
   </div>
 </div>
 </body>

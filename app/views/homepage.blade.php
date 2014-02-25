@@ -8,7 +8,7 @@
 	<a href="http://www.facebook.com/sharer/sharer.php?u={{ URL::to('/'); }}">Share on Facebook</a>
 
 </div>
-  <div class="col-md-4">
+  <div class="col-md-2">
    <form class="form-horizontal" role="form">
   <div class="form-group">
     <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
