@@ -4,3 +4,10 @@ body {
 .reg{
 	margin: 10px 0;
 }
+.homePageTable{
+	width: 60%;
+	margin: 0 auto;
+}
+.login , .signup{
+	margin:1%;
+}

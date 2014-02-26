@@ -1,6 +1,6 @@
 <?php
 
-class Homecontroller extends BaseController {
+class HomeController extends BaseController {
 
 	/**
 	 * Display a listing of the resource.
@@ -19,7 +19,7 @@ class Homecontroller extends BaseController {
 	 */
 	public function create()
 	{
-        return View::make('homepages.create');
+       $input = Input::all();
 	}
 
 	/**
